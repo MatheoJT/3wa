@@ -1,0 +1,8 @@
+capitaliser toutes les actions dans les mêmes controller 
+(supression de poste depuis admin, bo, add) 
+(home controller => home, contact)
+(blog => blog, add post, supp post, edition post)
+(user => login, logout, member page, register, user del et edit)
+
+try catch requetes sql
+autologin

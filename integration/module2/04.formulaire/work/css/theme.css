@@ -1,0 +1,30 @@
+/* Le code CSS de la démo */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    line-height: 1.5;
+    font-family: sans-serif;
+    color: #555;
+    background-color: #eee;
+}
+
+fieldset {
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 1em;
+    margin: 2em;
+    border-radius: 0.5em;
+}
+
+legend {
+    padding: 1em;
+    font-size: 1.8em;
+}
+
+label {
+    width: 20%;
+}

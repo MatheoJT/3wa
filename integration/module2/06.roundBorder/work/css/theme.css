@@ -1,0 +1,30 @@
+/* Le code CSS de la démo */
+
+.roundBorder1 {
+    border-radius: 1em;
+}
+
+.roundBorder2 {
+    border-radius: 2em;
+}
+
+.roundBorderTopLeft {
+    border-top-left-radius: 2em;
+}
+
+.roundBorderDif {
+    border-radius: 1em 2em 3em 4em;
+}
+
+.roundSimple {
+    border-radius: 50%;
+    width: 100px;
+    border: 10rem solid white;
+}
+
+.roundFourColors {
+    border-top: 10rem solid #ff00d7;
+    border-right: 10rem solid #ff8bf6;
+    border-bottom: 10rem solid purple;
+    border-left: 10rem solid #d16bff;
+}

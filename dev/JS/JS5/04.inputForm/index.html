@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de produit</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Formulaire de produit</h1>
+        <!-- le @submit.prevent pour e.preventDefault() -->
+        <form @submit.prevent="createProduct" ref="fields">
+            <label for="nom">NOM</label>
+            <input type="text" v-model="nom" id="nom"><br>
+            <label for="description">DESCRIPTION</label>
+            <input type="text" v-model="description" id="description"><br>
+            <label for="pha">Prix D'achat</label>
+            <input type="text" v-model="pha" id="pha"><br>
+            <label for="pv">Prix de vente</label>
+            <input type="text" v-model="pv" id="pv"><br>
+            <label for="qtt">Quantité</label>
+            <input type="text" v-model="qtt" id="qtt"><br>
+            <label for="ref">Reference</label>
+            <input type="text" v-model="ref" id="ref"><br>
+            <button>Submit</button>
+        </form>
+
+        <ul>
+            <li v-if="!isEmpty" v-for="product in products">
+                {{product.nom}} - {{product.description}} - {{product.pha}} - {{product.pv}} - {{product.qtt}} - {{product.ref}}
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+
+
+section {
+	padding: 2rem;
+	display: flex;
+}
+
+.page {
+	margin: 2em;
+	background-color: #fff;
+}
+
+.header-page, .footer-page {
+	padding: 2rem;
+	background-color: silver;
+	font-size: 2rem;
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+	section {
+		flex-wrap: wrap;
+	}
+	article {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	article {
+		width: 100%;
+	}
+}

@@ -1,0 +1,41 @@
+/* Le code CSS de la démo */
+
+li {
+    list-style-type: none;
+}
+
+.test-default {
+    display: flex;
+}
+
+.test-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.test-row-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.test-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.test-nowrap {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.test-wrap {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.test-align-center {
+    display: flex;
+    align-items: center;
+}

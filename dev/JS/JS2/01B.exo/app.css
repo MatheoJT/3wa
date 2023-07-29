@@ -1,0 +1,16 @@
+.container {
+    width: 960px;
+    height: 500px;
+    position: relative;
+}
+
+.red {
+    background: darkred;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    display: fixed;
+    float: left;
+    top: 0;
+    left: 0;
+}

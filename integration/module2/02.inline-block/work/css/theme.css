@@ -1,0 +1,14 @@
+/* Le code CSS de la démo */
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    background-color: gainsboro;
+    width: 33%;
+    display: inline-block;
+    font-size: 18px;
+    border: 1px dotted darkred;
+    color: black;
+}

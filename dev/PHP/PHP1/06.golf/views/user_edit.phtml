@@ -1,0 +1,27 @@
+<h1>Member Edit</h1>
+
+<div class="row">
+    <!-- Blog entries-->
+    <div class="col-lg-8">
+        <form class="row" action='?page=user_edit' method='post'>
+            <div class="col-md-6">
+                <label for="validationName" class="form-label">Name</label>
+                <input name='name' type="text" class="form-control" id="validationName" value="<?= $user['name'] ?>" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationEmail" class="form-label">Email</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input name='email' type="text" class="form-control" id="validationEmail" aria-describedby="inputGroupPrepend2" value="<?= $user['email'] ?>" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">Password</label>
+                <input name='password' type="password" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+</div>

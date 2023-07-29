@@ -1,0 +1,18 @@
+<!-- 5 V - Vue secondary -->
+<!-- https://www.php.net/manual/fr/function.mb-strimwidth.php -->
+<h1>Blog</h1>
+
+<div class="row">
+    <?php foreach ($posts as $post) : ?>
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="small text-muted"><?= date_create($post['created_at'])->format('d m Y') ?> Written by <?= ucfirst($post['name']) ?></div>
+                    <h2 class="card-title h4"><?= htmlspecialchars_decode($post['title']) ?></h2>
+                    <p class="card-text"><?= mb_strimwidth(htmlspecialchars_decode($post['content']), 0, 40, "...") ?></p>
+                    <a class="btn btn-primary" href="#!">Read more →</a>
+                </div>
+            </div>
+        </div>
+    <?php endforeach; ?>
+</div>

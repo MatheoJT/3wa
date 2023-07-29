@@ -1,0 +1,63 @@
+<h1>Espace Membre</h1>
+
+<div class="row">
+    <!-- Blog entries-->
+    <div class="col-lg-4">
+        <!-- Featured blog post-->
+        <div class="card mb-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><?= ucfirst($user['name']) ?></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Role : <strong><?= $user['role_name'] ?></strong></h6>
+                    <p class="card-text"></p>
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                            <a href="?page=user_edit" class="btn btn-sm btn-info">Edit Account</a>
+                        </div>
+                        <div class="btn-group me-2" role="group" aria-label="Second group">
+                            <a href="?page=user_del" class="btn btn-sm btn-danger">Delete Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Side widgets-->
+    <div class="col-lg-8">
+        <!-- Categories widget-->
+        <div class="card mb-4">
+            <div class="card-header">Categories</div>
+            <div class="card-body">
+                <div class="row">
+                    <table class="table table-responsive table-sm table-striped align-middle">
+                        <thead>
+                            <tr>
+                                <td>Title</td>
+                                <td>Created At</td>
+                                <td>Action</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($posts as $post) : ?>
+                                <tr class="table-active">
+                                    <td><?= htmlspecialchars_decode($post['title']) ?></td>
+                                    <td><?= date_create($post['created_at'])->format('d/m/Y à H:i') ?></td>
+                                    <td>
+                                        <ul class="list-group list-group-horizontal">
+                                            <li class="list-group-item">
+                                                <a href="?page=post_edit&postId=<?= $post['id'] ?>" class="list-group-item text-info list-group-item-action">Edit</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="?page=post_del&postId=<?= $post['id'] ?>" class="list-group-item text-danger list-group-item-action">Del</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

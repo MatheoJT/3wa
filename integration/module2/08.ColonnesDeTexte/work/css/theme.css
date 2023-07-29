@@ -1,0 +1,24 @@
+/* Le code CSS de la démo */
+
+.column-text {
+	text-align: justify;
+	column-count: 3;
+	column-gap: 2em;
+	column-rule: 1px solid #333;
+}
+
+.list-column-text {
+    list-style: none;
+    column-count: 2;
+    column-gap: 2em;
+}
+
+.list-column-text li{
+    margin-bottom: 2em;
+}
+
+.dummy {
+    list-style: none;
+    column-count: 4;
+    column-gap: 1em;
+}

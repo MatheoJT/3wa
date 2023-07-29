@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Source+Sans+Pro&display=swap');
+
+@font-face {
+    font-family: "Courgette";
+    src: url("../assets/font/Courgette-Regular.ttf");
+}
+
+/*Basic*/
+
+
+body {
+    max-width: 980px;
+    margin: auto;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #444;
+}
+
+li>a {
+    text-decoration: none;
+}
+
+footer>p>a {
+    color: black
+}
+
+/*Citation*/
+
+blockquote {
+    background-color: #d7e1ef;
+    text-align: center;
+    color: #003884;
+    font-family: "Courgette", sans-serif;
+}
+
+q {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+/*Font*/
+
+h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+
+h1, h2, h3, ol {
+    font-family: "Courgette", sans-serif;
+}
+
+ol {
+    font-weight: bold;
+}
+
+/*Color*/
+
+h1, ol, h3, strong, em {
+    color: #003884;
+} 
+
+h2 {
+    color: #4f89b9;
+}
+
+/*Align*/
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+header, footer, h2, h3 {
+    text-align: center;
+}
+
+header {
+    margin: 10px;
+}
+
+ol {
+    text-align: left;
+}
+
+ul {
+    clear: both;
+}

@@ -1,0 +1,31 @@
+<!-- 5 V - Vue secondary -->
+<h1>Login</h1>
+<?php if (!array_key_exists('user', $_SESSION)) : ?>
+    <form class="row g-3" action='?page=login' method='post'>
+        <div class="col-md-6">
+            <label for="validationEmail" class="form-label">Email</label>
+            <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input name='email' type="text" class="form-control" id="validationEmail" aria-describedby="inputGroupPrepend2">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationDefault03" class="form-label">Password</label>
+            <input name='password' type="password" class="form-control" id="validationDefault03">
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+    </form>
+<?php else : ?>
+    <!--
+                Affichage du nom du user connecté et du bouton de déconnexion
+                - Le formulaire doit être cacher si le user est connecté
+            -->
+    <div class="card">
+        Hello <?= $_SESSION['user']['name'] ?> <br>
+        <a href="?page=logout" class="btn btn-danger">Logout</a>
+    </div>
+<?php endif; ?>
+
+</div>

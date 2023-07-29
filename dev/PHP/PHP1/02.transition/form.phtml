@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire POST</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ICI ON VA CONDITIONNER, POUR AFFICHER LE FORM AINSI QUE LE RESULTAT SI IL ETAIT CORRECT -->
+
+        <h1>Formulaire</h1>
+        <form action="form-controller.php" method="post">
+            <input type="text" name="field_name" placeholder="Name" value='<?= $field_name ?? '' ?>'>
+            <br>
+            <input type="text" name="field_email" placeholder="Email" value='<?= $field_email ?? '' ?>'>
+            <br>
+            <input type="text" name="field_pwd" placeholder="Pwd" value='<?= $field_pwd ?? '' ?>'>
+            <br>
+            <input type="radio" name="field_radio" value='radio_1' checked> Choix radio 1
+            <input type="radio" name="field_radio" value='radio_2'> Choix radio 2
+            <br>
+            <input type="checkbox" name="field_checkbox[]" value='golf'> Choix check 1
+            <input type="checkbox" name="field_checkbox[]" value='squash'> Choix check 2
+            <input type="checkbox" name="field_checkbox[]" value='bad'> Choix check 3
+            <input type="checkbox" name="field_checkbox[]" value='saignement'> Choix check 4
+            <br>
+            <select name="field_select">
+                <option value="1">Sport</option>
+                <option value="2">Astro</option>
+                <option value="3">BC</option>
+            </select>
+            <br>
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <?php if (isset($error)) : ?>
+            <p><?= $error ?></p>
+        <?php endif; ?>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+body {
+	text-align: center;
+    color: #555;
+    line-height: 2;
+}
+
+.container {
+	max-width: 980px;
+    margin: 10px;
+}
+
+header, main, footer, section, aside, nav, article, p, h1, h2, h3, .footer {
+	background-color:rgba(0,0,0,0.1);
+	border:1px solid rgba(0,0,0,0.2);
+	margin: 10px;
+}

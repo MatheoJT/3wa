@@ -1,0 +1,144 @@
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1.6rem;
+  }
+  
+  header {
+    background-color: orange;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  main {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  }
+
+  
+  h2 {
+    margin: 20px 0;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  h2.selected-category {
+    transform: translateX(100%);
+  }
+  
+  #questionsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .question-card {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 10px 0px #ccc;
+  }
+
+  .alert {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px 0;
+  }
+
+  .success {
+    background-color: #A6EA77;
+    animation: sucessBounce 0.75s ease-in-out;
+  }
+
+  .failure {
+    background-color: #FF6F6F;
+    animation-name: failureBounce;
+    animation-duration: .5s;
+    animation-delay: 0.25s;
+  }
+
+  @keyframes failureBounce {
+    0% {
+      transform: translateX(0px);
+      timing-function: ease-in;
+    }
+    37% {
+      transform: translateX(5px);
+      timing-function: ease-out;
+    }
+    55% {
+      transform: translateX(-5px);
+      timing-function: ease-in;
+    }
+    73% {
+      transform: translateX(4px);
+      timing-function: ease-out;
+    }
+    82% {
+      transform: translateX(-4px);
+      timing-function: ease-in;
+    }
+    91% {
+      transform: translateX(2px);
+      timing-function: ease-out;
+    }
+    96% {
+      transform: translateX(-2px);
+      timing-function: ease-in;
+    }
+    100% {
+      transform: translateX(0px);
+      timing-function: ease-in;
+    }
+  }
+
+  @keyframes sucessBounce {
+    0% {
+    transform: scale(1,1) translate(0px, 0px);
+    }
+
+    30%{
+    transform: scale(1,0.8) translate(0px, 10px); 
+    }
+
+    75%{
+    transform: scale(1,1.1) translate(0px, -25px); 
+    }
+
+    100% {
+    transform: scale(1,1) translate(0px, 0px);
+    }
+}
+  
+  

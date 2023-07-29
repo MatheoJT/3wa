@@ -1,0 +1,30 @@
+.captcha {
+    background-color: skyblue;
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.input-captcha {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+  transition: height 0.2s ease-in-out;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.input-captcha:focus {
+  height: 50px;
+}

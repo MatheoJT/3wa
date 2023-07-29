@@ -1,0 +1,66 @@
+<!-- 4 V - Main Vue-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha3/css/bootstrap.min.css' integrity='sha512-fjZwDJx4Wj5hoFYRWNETDlD7zty6PA+dUfdRYxe463OBATFHyx7jYs2mUK9BZ2WfHQAoOvKl6oYPCZHd1+t7Qw==' crossorigin='anonymous' />
+    <title>Mon App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <main>
+                    <h2>Golf</h2>
+                    <nav>
+                        <a href="./index.php">Home</a>
+                        <?php if (!Session::isConnected()) : ?>
+                            <a href="?page=register">Register</a>
+                            <a href="?page=login">Login</a>
+                        <?php else : ?>
+                            <a href="?page=member">Espace Membre</a>
+                            <a href="?page=logout">Logout</a>
+                        <?php endif; ?>
+                        <a href="?page=blog">Blog</a>
+                        <a href="?page=contact">Contact</a>
+                        <?php if (Session::isAdmin()) : ?>
+                            <a href="?page=bo">BO</a>
+                        <?php endif; ?>
+                    </nav>
+                </main>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <!-- Display Message -->
+            <!-- Error -->
+            <?php if (!is_null(Session::getError())) : ?>
+                <div class="alert alert-danger" role="alert">
+                    <ul>
+                        <li> <?= Session::getError() ?> </li>
+                    </ul>
+                </div>
+            <?php endif; ?>
+
+            <!-- Success -->
+            <?php if (!is_null(Session::getNotif())) : ?>
+                <div class="alert alert-success" role="alert">
+                    <ul>
+                        <li> <?= Session::getNotif() ?> </li>
+                    </ul>
+                </div>
+            <?php endif; ?>
+
+            <?php // Reset Notif & error
+            Session::resetErrors();
+            Session::resetNotifs();
+            ?>
+            <?php include 'views/' . $template . '.phtml' ?>
+        </div>
+    </div>
+</body>
+
+</html>

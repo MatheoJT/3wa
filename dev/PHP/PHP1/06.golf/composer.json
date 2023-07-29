@@ -1,0 +1,19 @@
+{
+    "name": "matheo/06.golf",
+    "type": "project",
+    "require": {
+        "altorouter/altorouter": "^2.0",
+        "symfony/var-dumper": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Matheo\\06Golf\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "matheo",
+            "email": "baxymoz@gmail.com"
+        }
+    ]
+}

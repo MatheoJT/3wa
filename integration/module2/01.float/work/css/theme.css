@@ -1,0 +1,27 @@
+/* Le code CSS de la démo */
+
+
+.nothing {
+    padding: 1em;
+}
+
+.nothing > article {
+    float: left;
+    width: 50%;
+}
+
+.overflow {
+    overflow: auto;
+}
+
+.clear {
+    clear: both;
+    border-bottom: 3px solid red;
+}
+
+.clearfix::after {
+    content: "";
+	display: block;
+	clear: both;
+	border-bottom: 3px solid purple;
+}

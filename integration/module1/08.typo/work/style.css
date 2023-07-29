@@ -1,0 +1,105 @@
+
+@font-face {
+	font-family: "SpecialElite";
+	src: url(./assets/fonts/specialelite/SpecialElite.woff) format("woff");
+}
+
+@font-face {
+	font-family: "Cardo";
+	src: url(./assets/fonts/cardo/cardo-regular.woff) format("woff");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cardo";
+	src: url(./assets/fonts/cardo/cardo-italic.woff) format("woff");
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Cardo";
+	src: url(./assets/fonts/cardo/cardo-bold.woff) format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+    max-width: 420px;
+    margin: auto;
+    line-height: 1.5em;
+    font-family: "Cardo", sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.5em;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+h3::before {
+    content: "❧";
+}
+
+blockquote::before {
+    content: "«";
+}
+
+blockquote::after {
+    content: "»";
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+header::after{
+    display: block;
+    content: '';
+    margin-top: 10px;
+    border-bottom: 1px solid #000;
+}
+
+main::after{
+    display: block;
+    content: '';
+    margin-top: 10px;
+    border-bottom: 1px solid #000;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+	border-bottom: 1px dashed;
+}
+
+.ico {
+    text-align: center;
+    font-size: 3em;
+    line-height: 3em;
+}
+
+h1, h2, h3 {
+    font-family: "SpecialElite";
+}
+
+section p::first-letter {
+    font-size: 2em;
+    margin: 0.5em;
+    font-family: "SpecialElite", sans-serif;
+    float: left;
+}

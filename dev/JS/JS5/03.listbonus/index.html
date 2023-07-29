@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Do It Again</title>
+</head>
+
+<body>
+    <h1>On s'entraine</h1>
+
+    <div id="app">
+        <form>
+            <label>Q°1 : Film préféré</label>
+            <input v-model="film" type="text" />
+            <br>
+            <label>Q°2 : Musique préférée</label>
+            <input v-model="musique" type="text" />
+            <br>
+            <label>Q°3 : Artiste préféré</label>
+            <input v-model="artiste" type="text" />
+        </form>
+        <br>
+        <ul>
+            <li>Film préféré : {{ film }}</li>
+            <li>Musique préférée : {{ musique }}</li>
+            <li>Artiste préféré : {{ artiste }}</li>
+        </ul>
+        <table>
+            <tr>
+                <th>Catégorie</th>
+                <th>Produits</th>
+            </tr>
+            <tr v-for="(produits, categorie) in listeDeCourse">
+                <td>{{ categorie }}</td>
+                <td>
+                    <ul>
+                        <li v-for="produit in produits">{{ produit }}</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

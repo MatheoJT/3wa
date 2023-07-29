@@ -1,0 +1,30 @@
+/* Le code CSS de la démo */
+.box {
+	padding: 2em;
+    color: black;
+}
+
+
+.low-gradient-minimal {
+    background: linear-gradient(to top, #DF7401 0%, #F5DA81 100%)
+}
+
+.multi-gradient {
+    background: linear-gradient(to top, #DF7401 0%, #F5DA81 50%, #3ADF00 100%)
+}
+
+.angle-gradient {
+    background: linear-gradient(45deg, #DF7401 0%, #F5DA81 50%, #3ADF00 100%)
+}
+
+.linear-stop-point-gradient {
+    background: linear-gradient(to top, #DF7401 50%, #F5DA81 50%, #3ADF00 100%)
+}
+
+.linear-repeat-gradient {
+    background: repeating-linear-gradient(to top, #DF7401 0%, #F5DA81 25%)
+}
+
+.radial-gradient {
+    background: radial-gradient(circle, #DF7401 0%, #F5DA81 50%, #3ADF00 100%)
+}

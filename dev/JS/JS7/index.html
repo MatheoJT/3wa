@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="module" src="./assets/js/main.js"></script>
+    </head>
+    <body>
+        <header>
+          <h1>Utilisation de QuizApi</h1>
+        </header>
+        <h2>Choisissez une catégorie</h2>
+        <div id="alert"></div>
+        <select id="categorySelect">
+            <option selected disabled>Catégories v</option>
+            <option value="linux">Linux</option>
+            <option value="bash">Bash</option>
+            <option value="docker">Docker</option>
+            <option value="sql">MySQL</option>
+            <option value="devops">DevOps</option>
+          </select>
+          <div id="questionsContainer"></div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!-- 5 V - Vue secondary -->
+<h1>Register</h1>
+<div class="container">
+    <form class="row g-3" action='?page=register' method='post'>
+        <div class="col-md-6">
+            <label for="validationName" class="form-label">Name</label>
+            <input name='name' type="text" class="form-control" id="validationName" placeholder="Otto">
+        </div>
+        <div class="col-md-6">
+            <label for="validationEmail" class="form-label">Email</label>
+            <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input name='email' type="text" class="form-control" id="validationEmail" aria-describedby="inputGroupPrepend2">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationDefault03" class="form-label">Password</label>
+            <input name='password' type="password" class="form-control" id="validationDefault03">
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+    </form>
+</div>

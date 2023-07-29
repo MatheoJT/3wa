@@ -1,0 +1,231 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6em;
+    font-family: 'Lato', sans-serif;    
+    margin: 0;
+    color: #333;
+    line-height: 1.6em;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#trip-bord img {
+    max-width: 49%;
+}
+  
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav {
+    background-color: #40CCEA;
+    padding: 10px;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li {
+    flex-basis: 20%;
+}
+
+nav ul li a{
+    color: white;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+h1::first-letter {
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #40CCEA;
+    text-align: center;
+    font-size: 4.5rem;
+    word-spacing: 10px;
+    border-bottom: 1px dotted;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+em {
+    font-style: normal;
+}
+
+.red {
+    color: red;
+}
+
+.ocre {
+    color: #FFA500;
+}
+
+.left {
+    float: left;
+    margin-right: 2%;
+}
+  
+.right {
+    float: right;
+    margin-left: 2%;
+}
+
+.clear {
+    clear: both;
+}
+  
+hr {
+    border: 0;
+    border-top: 1px solid;
+    margin: 20px 0;
+}
+  
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+  
+tr:nth-child(even) {
+    background-color: #EEE;
+}
+  
+th, td {
+    border: 1px solid #CCC;
+    padding: 1em;
+}
+
+#about {
+    background-image: url("../assets/fond.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+}
+
+#about article {
+    background-color: #FFF;
+    width: 50%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #0096D0;
+    color: #FFF;
+    border: 2px solid #0096D0;
+    padding: 0.4em 1em;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+
+button:hover {
+    background-color: #FFF;
+    color: #0096D0;
+}
+
+
+
+form {
+    background-color: #444;
+    background-image: url("../assets/map-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+}
+  
+input, textarea {
+	display: block;
+    width: 100%;
+	padding: 0.65em 1em;
+	font-size: 1.6rem;
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.inputs section {
+    flex-basis: 48%;
+}
+
+textarea {
+	width: 100%;
+	min-height: 8em;
+}
+
+#submit-button {
+    text-align: center;
+    padding: 1em;
+}
+
+#submit-button button {
+    padding: 1em 2em;
+}
+
+.follow-me a {
+  font-size: 1.9em;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #40CCEA;
+    color: #FFF;
+    padding: 1% 2%;
+}
+  
+footer a {
+    color: #FFF;
+    text-decoration: underline;
+}
+  
+footer img {
+    width: 60px;
+}

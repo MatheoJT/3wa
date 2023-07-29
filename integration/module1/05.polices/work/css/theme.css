@@ -1,0 +1,48 @@
+/* Le code CSS de l'exercice dirigé */
+@font-face {
+	font-family: 'Muli';
+	src: url(../fonts/Muli-Regular.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Muli';
+	src: url(../fonts/Muli-Bold.ttf) format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Muli';
+	src: url(../fonts/Muli-Italic.ttf) format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Muli';
+	src: url(../fonts/Muli-BoldItalic.ttf) format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+* {
+	font-family: 'Muli', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Barriecito', cursive;
+}
+
+.fa-facebook-square {
+	color: #4267B2;
+}
+.fa-twitter-square {
+	color: #1da1f2;
+}
+.fa-youtube {
+	color: #FF0000;
+}
+.fa-apple {
+	color: #555;
+}

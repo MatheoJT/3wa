@@ -1,0 +1,277 @@
+
+/* @EVERYONE */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8em;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    color: #414141;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+	background: url("../assets/path.png") repeat-x 0 bottom #00748D;
+	color: white;
+    font-family: "Fjalla One", sans-serif;
+    padding: 2rem;
+}
+
+header img {
+    margin-right: 0.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+	color: white;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	font-size: 2rem;
+}
+
+nav li a {
+	padding: 1rem 2rem;
+	margin-left: 3rem;
+}
+
+nav li a:hover, .selected {
+	background-color: #fff;
+	color: #00748D;
+}
+
+strong {
+	font-size: 2.2rem;
+	font-weight: normal;
+}
+
+/* @MAIN */
+
+#page-header {
+    background: url("../assets/bg-header.jpg") no-repeat left center/cover;
+    padding: 15rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-header h1 {
+	background-color: #CB8606;
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+	display: inline-block;
+	margin-bottom: 3rem;
+	padding: 1.5rem 2rem;
+    font-family: "Fjalla One", sans-serif;
+}
+
+#page-header p {
+	background-color: white;
+	color: #00748D;
+	font-weight: bold;
+	font-size: 2rem;
+	display: inline-block;
+	padding: 1rem 3rem;
+}
+
+#prestations {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0 2rem;
+}
+
+#prestations div {
+	line-height: 1.5;
+	padding: 2rem;
+    width: 24%;
+}
+
+h2 {
+	font-size: 2.5rem;
+	color: #00748D;
+	text-align: center;
+	margin: 7rem 0 5rem 0;
+	flex: 1 0 100%;
+}
+
+h2::before, h2::after {
+	content: "-";
+	padding: 0 1rem;
+	color: #CB8606;
+}
+
+
+#prestations i {
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#prestations i::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	font-size: 3rem;
+	background-color: #CB8606;
+	color: white;
+	padding: 2rem 2rem;
+	margin-bottom: 2rem;
+}
+
+#prestations h3 {
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+}
+
+#prestations a {
+	background-color: #00748D;
+	color: white;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+    border: #00748D 2px solid;
+	padding: 1rem 2rem;
+	margin: 2rem;
+}
+
+#prestations a:hover {
+	background-color: white;
+	color: #00748D;
+}
+
+#prestataires {
+	text-align: center;
+
+}
+
+#prestataires img {
+	border: #00748D 2px solid;
+    margin: 4rem;
+}
+
+/* @FOOTER */
+
+footer {
+	background: url("../assets/path.png") repeat-x 0 bottom #00748D;
+	color: white;
+    font-family: "Fjalla One", sans-serif;
+    padding: 2.5rem;
+}
+
+footer div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer a {
+	color: white;
+    padding: 1rem;
+    font-size: 1.3em
+}
+
+
+/* @MEDIA QUERIES */
+
+@media screen and (max-width: 780px) {
+    #prestations div {
+        width: 100%;
+    }
+   
+    #page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    nav li a {
+        display: block;
+		text-align: center;
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+		margin-left: 0;
+    }
+
+
+    #page-header p {
+        font-size: 1.5rem;
+    }
+    #prestations i::before {
+        font-size: 2.5rem;
+        padding: 1.5rem 1.5rem;
+    }
+    #prestations h3 {
+        font-size: 1.5rem;
+    }
+    #prestations a {
+        font-size: 1.2rem;
+        margin: 2rem, 10rem;
+    }
+    #prestataires img {
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #page-header h1 {
+        font-size: 2rem;
+    }
+
+
+
+    #page-header p {
+        font-size: 1.2rem;
+    }
+    #prestations i::before {
+        font-size: 2rem;
+        padding: 1rem 1rem;
+    }
+    #prestations h3 {
+        font-size: 1.2rem;
+    }
+    #prestations a {
+        font-size: 1rem;
+    }
+    #prestataires img {
+        margin: 1rem;
+    }
+}
+
+

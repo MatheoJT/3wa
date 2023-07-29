@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<!-- CSS only -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<script type="module" src="./js/app.js"></script>
+		<title>Form Validation</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<article>
+				<h1>
+					Validation de form
+					<small class="text-muted">en JS vers le LocalStorage</small>
+				</h1>
+				<form>
+					<div class="form-group">
+						<label for="lastname">Lastname</label>
+						<input
+							type="text"
+							class="form-control"
+							id="lastname"
+							placeholder="Duss"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="firstname">Firstname</label>
+						<input
+							type="text"
+							class="form-control"
+							id="firstname"
+							placeholder="Jean-Claude"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input
+							type="text"
+							class="form-control"
+							id="password"
+							placeholder="tous sauf azerti123 ou password ou motdepasse"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="email">Email address</label>
+						<input
+							type="text"
+							class="form-control"
+							id="email"
+							placeholder="name@example.com"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="birthdate">BirthDate</label>
+						<input
+							type="date"
+							class="form-control"
+							id="birthdate"
+							name="birthdate"
+							placeholder="jj/mm/aaaa"
+						/>
+					</div>
+
+					<h6>Hobbies</h6>
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input hobbies"
+							type="checkbox"
+							id="voyage"
+							value="voyage"
+						/>
+						<label class="form-check-label" for="voyage"
+							>Voyage</label
+						>
+					</div>
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input hobbies"
+							type="checkbox"
+							id="technologie"
+							value="technologie"
+						/>
+						<label class="form-check-label" for="technologie"
+							>Technologie</label
+						>
+					</div>
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input hobbies"
+							type="checkbox"
+							id="musique"
+							value="musique"
+						/>
+						<label class="form-check-label" for="musique"
+							>Musique</label
+						>
+					</div>
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input hobbies"
+							type="checkbox"
+							id="gastronomie"
+							value="gastronomie"
+						/>
+						<label class="form-check-label" for="gastronomie"
+							>Gastronomie</label
+						>
+					</div>
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input hobbies"
+							type="checkbox"
+							id="artisanat"
+							value="artisanat"
+						/>
+						<label class="form-check-label" for="artisanat"
+							>Artisanat</label
+						>
+					</div>
+
+					<h6>Genre</h6>
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input"
+							type="radio"
+							name="genre"
+							id="femme"
+							value="f"
+						/>
+						<label class="form-check-label" for="femme"
+							>Femme</label
+						>
+					</div>
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input"
+							type="radio"
+							name="genre"
+							id="homme"
+							value="h"
+						/>
+						<label class="form-check-label" for="homme"
+							>Homme</label
+						>
+					</div>
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input"
+							type="radio"
+							name="genre"
+							id="tr"
+							value="t"
+						/>
+						<label class="form-check-label" for="tr"
+							>Ni l'un - Ni l'autre</label
+						>
+					</div>
+
+					<div class="form-group">
+						<label for="oldActivities"
+							>Ancien secteur d'activitée</label
+						>
+						<select class="form-control" id="oldActivities">
+							<option value="tourisme">Touriste</option>
+							<option value="industriel">Industriel</option>
+							<option value="tertiaire">Tertiaire</option>
+							<option value="administration">
+								Administration
+							</option>
+							<option value="space">Space</option>
+						</select>
+					</div>
+
+					<div class="mt-2">
+						<button class="btn btn-outline-dark">Send</button>
+					</div>
+				</form>
+			</article>
+		</div>
+
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script type="module" src="./js/app.js"></script>
+	</body>
+</html>
